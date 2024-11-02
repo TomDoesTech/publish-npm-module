@@ -1,0 +1,33 @@
+{
+  "name": "@tomanagle/who-to-sub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "index.js",
+  "scripts": {
+   "build": "tsup",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Tom Nagle",
+  "license": "ISC",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/tomdoestech/who-to-sub"
+  },
+  "homepage":{
+    "type": "git",
+    "url": "https://github.com/tomdoestech/who-to-sub"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
