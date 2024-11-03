@@ -1,27 +1,26 @@
 {
   "name": "who-to-sub-tomdoestech",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "index.js",
   "scripts": {
-   "build": "tsup",
+    "build": "tsup",
     "test": "vitest"
   },
   "keywords": [],
   "author": "Tom Nagle",
   "license": "ISC",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/tomdoestech/who-to-sub"
   },
-  "homepage":{
+  "homepage": {
     "type": "git",
     "url": "https://github.com/tomdoestech/who-to-sub"
   },
