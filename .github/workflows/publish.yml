@@ -31,12 +31,14 @@ jobs:
           id: check
           run: |
             CURRENT_VERSION=$(jq -r .version package.json)
+            echo "Current version: $CURRENT_VERSION"
             LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
             echo "Latest tag: $LATEST_TAG"
 
-            LATEST_VERSION=${LATET_TAG#v}
+            LATEST_VERSION=${LATEST_TAG#v}
 
-            if ["$LATEST_VERSION" != "$CURRENT_VERSION"]; then
+            if ["$LATEST_VERSION" != "$CURRENT_VERSION"]; 
+            then
               echo "version_changed=true" >> $GITHUB_OUTPUT
               echo "new_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
             else
